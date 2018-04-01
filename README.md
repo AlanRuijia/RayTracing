@@ -10,8 +10,7 @@
 *                                   				
 *                                   				
 *******************************
-
-This is a ray tracer.
+This repository provides an implementation of ray tracer.
 
 ### Usage 
 
@@ -24,7 +23,7 @@ For example, when step_max = 0, then no reflected or refracted rays are to be ca
 The remaining arguments can be used to turn on different features of your raytracer. 
 The default, if no flag is provided, is to turn the feature off.
 
-There are a total of six feature:
+There are a total of six features:
 
 * +s: inclusion of shadows
 * +l: inclusion of reflection
