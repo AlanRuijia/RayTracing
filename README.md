@@ -10,24 +10,20 @@
 *                                   				
 *                                   				
 *******************************
-This repository provides an implementation of ray tracer.
+This project implements a ray tracer.
 
 ### Usage 
 
-The option –u (user) should be used if you want to render a scene you created 
-(to be defined in the function set_up_user_scene() in scene.cpp). 
-
-To render the default scene, defined in the function set_up_default_scene() in scene.cpp, use –d. 
-The next argument specifies the number of recursion levels. 
-For example, when step_max = 0, then no reflected or refracted rays are to be cast. 
-The remaining arguments can be used to turn on different features of your raytracer. 
-The default, if no flag is provided, is to turn the feature off.
-
-There are a total of six features:
-
-* +s: inclusion of shadows
-* +l: inclusion of reflection
-* +r: inclusion of refraction
-* +c: inclusion of chess board pattern
-* +f: enabling diffuse rendering using stochastic ray generations
-* +p: enabling super-sampling 
+- Use -u (user) to render a user customized scene.
+  - User scene is defined in set_up_user_scene() in scene.cpp
+- use -d to render the default scene
+  - Default scene is defined in set_up_default_scene() in scene.cpp
+- The second argument specifies the number of recursion levels. 
+  - When step_max = 0, then no reflected or refracted rays are to be cast. 
+- The remaining arguments can be used to turn on different features. 
+  * +s: inclusion of shadows
+  * +l: inclusion of reflection
+  * +r: inclusion of refraction
+  * +c: inclusion of chess board pattern
+  * +f: enabling diffuse rendering using stochastic ray generations
+  * +p: enabling super-sampling 
