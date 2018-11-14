@@ -1,29 +1,25 @@
+### Ray Tracing
+*******************************                             				     		                        				    
+*    Author: Ruijia(Alan) Mao    		 
+*
+*    E-mail: rma61@sfu.ca     
+*                                   				
+*    StudentID: 301295769         		                             				     		                           				
 *******************************
-*                                   				
-*    README For Ray Tracing         		
-*                                   				    
-*    Created by Ruijia(Alan) Mao    		 
-*                                   				
-*    Student Num: 301295769         		
-*                                   				
-*    E-mail : rma61@sfu.ca          		
-*                                   				
-*                                   				
-*******************************
-This project implements a ray tracer.
+This project implements a ray tracer in C++.
 
 ### Usage 
 
-- Use -u (user) to render a user customized scene.
-  - User scene is defined in set_up_user_scene() in scene.cpp
-- use -d to render the default scene
-  - Default scene is defined in set_up_default_scene() in scene.cpp
+- Use -u (user) to render a customized scene.
+  - User scene is defined by set_up_user_scene() in scene.cpp
+- Use -d to render the default scene.
+  - Default scene is defined by set_up_default_scene() in scene.cpp
 - The second argument specifies the number of recursion levels. 
-  - When step_max = 0, then no reflected or refracted rays are to be cast. 
-- The remaining arguments can be used to turn on different features. 
-  * +s: inclusion of shadows
-  * +l: inclusion of reflection
-  * +r: inclusion of refraction
-  * +c: inclusion of chess board pattern
-  * +f: enabling diffuse rendering using stochastic ray generations
-  * +p: enabling super-sampling 
+  - Set step_max = 0 to have no reflected or refracted ray cast. 
+- The remaining arguments are used to switch on following features. 
+  * +s: inclusion of shadows;
+  * +l: inclusion of reflection;
+  * +r: inclusion of refraction;
+  * +c: inclusion of chess board pattern;
+  * +f: enabling diffuse rendering through stochastic ray generations;
+  * +p: enabling super-sampling; 
